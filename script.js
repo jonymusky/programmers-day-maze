@@ -2,7 +2,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 const cellSize = 20;
 const magicNumber = 16;
-const grid = Array(magicNumber).fill(null).map(() => Array(magicNumber).fill('wall'));
+const grid = Array(magicNumber+1).fill(null).map(() => Array(magicNumber+1).fill('wall'));
 let start = null;
 let end = null;
 let player = null;
